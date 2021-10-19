@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagem Dinâmica</h2>
+    <p>A tag PICTURE permite que sejam criados o SOURCE MEDIA, sendo que esses sources permitem adaptar o tamanho de suas imagens ao tamanho da tela do usuário.</p>
+    <P>Obs: a base é a imagem padrão que você quer carregar, accima dela você vai colocando os sources na ordem que desejar.</P>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho de seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">   
+    </picture>
+    
+    <h1>Reproduzindo Aúdio</h1>
+    <p>Vamos reproduzir um aúdio em html5.</p>
+    <p>A maneira mais simples de reproduzir um aúdio é através da tag AUDIO SRC usando também CONTROLS AUTOPLAY.</p>
+    <audio src="midias/whileyouworkit .mp3" controls autoplay></audio>
+    <p>Alguns navegadores não têm compatibilidade com alguns formatos de arquivos de aúdio, por exemplo com o mp3. Nesses casos, temos outros formatos como o wav, o ogg.</p>
+    <p>Dessa forma, se você quiser ter uma maior compatibilidade com os navegadores é ncessário outra forma de adicionar o aúdio:</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/whileyouworkit .mp3" type="audio/mpeg">
+        <source src="midias/whileyouworkit .ogg" type="audio/ogg">
+        <source src="midias/whileyouworkit .wav" type="audio/wav">
+    </audio>
+    <p>O navegador vai tentar reproduzir conforme a ordem acima...se ele não conseguir reproduzir pode colocar um link para baixar o arquivo.</p>
+    <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midias/whileyouworkit .mp3">Clique aqui para baixar o arquivo MP3</a>.</p>
+</body>
+</html>
