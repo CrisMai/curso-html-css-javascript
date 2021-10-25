@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(187, 228, 187, 0.877);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color:rgba(160, 81, 45, 0.849);
+}
+
+/*Em HTML quando usar Id em CSS vira # */
+/*Tudo que em HTML for CLASS em CSS vira . (ponto)*/
+
+h1#principal { 
+    text-align: center;
+    color:maroon;
+    font-size: 3em;
+    font-weight: bolder; 
+    background-color:rgba(240, 207, 174, 0.466);
+}
+
+h2 {
+    color: rgba(8, 54, 28, 0.808);
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.alimento {
+    color: red;
+}
+
+.destaque {
+    background-color:beige  ;
+}
+p {
+    text-align: justify;
+    text-indent: 20px;
+
+}
