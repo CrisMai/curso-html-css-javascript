@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: brown;
+            font-weight: bolder;
+        }
+        a:visited {
+            color: darkblue;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            color: skyblue;
+            font-weight: normal;
+        }
+        a::before {
+            content: '[Atenção]';
+            color: seagreen;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <p>Por padrão, os navegadores mostram links inéditos em azul e os visitados em violeta e os links parecem sublinhados.</p>
+    <p>Você pode alterar essas configurações usando alguns pseudo-elementos e pseudo-classes.</p>
+    <p>a {} muda a cor do link; a:visited {} muda a cor dos links visitados; a:hover {} muda a cor do link quando passar o mousse por cima; a::after {} vai adicionar algum conteúdo no final; a::before {} adiciona algum conteúdo no início do link.</p>
+    <p># = id; . = class; : = pseudo-class; :: = pseudo-element; > = clildren.</p>
+    <ul>
+        <li><a href="https://github.com/CrisMai" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/Cursoemvideo">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Vídeo</a></li>
+    </ul>
+    
+</body>
+</html>
